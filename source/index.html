@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__wrapper container">
-      <a class="main-header__logo" href="#">
-        <img src="" alt="Логотип">
-        <h1 class="main-header__title">Cat Energy</h1>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__wrapper container">
+      <a class="header__logo logo" href="#">
+        <picture class="logo__image">
+          <img src="" width="" height="" alt="Логотип сайта">
+        </picture>
+        <img class="logo__text-logo" src="" width="" height="" alt="Текстовый логотип сайта">
       </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <p>Главная</p>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--current">
+            <p class="nav__link">Главная</p>
           </li>
-          <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -32,29 +36,29 @@
   <main class="main-container">
     <section class="hero">
       <div class="hero__wrapper container">
-        <h2 class="hero__title">Функциональное питание для котов</h2>
+        <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="" alt="Изображение продукта">
+        <img class="hero__image" src="" width="" height="" alt="Изображение продукта">
         <button class="hero__button button button--primary" type="button">Подобрать программу</button>
       </div>
     </section>
     <section class="programs">
       <div class="programs__wrapper container">
         <h2 class="visually-hidden">Программы питания</h2>
-          <ul class="programs__list">
-            <li class="programs__item">
-              <h3 class="programs__title">Похудение</h3>
-              <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <img src="" alt="Логотип программы похудения slim">
-              <button class="programs__button">Каталог slim</button>
-            </li>
-            <li class="programs__item">
-              <h3 class="programs__title">Набор массы</h3>
-              <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <img src="" alt="Логотип программы похудения pro">
-              <button class="programs__button">Каталог pro</button>
-            </li>
-          </ul>
+        <ul class="programs__list">
+          <li class="programs__item">
+            <h3 class="programs__title">Похудение</h3>
+            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <img src="" width="" height="" alt="Логотип программы похудения slim">
+            <button class="programs__button" type="button">Каталог slim</button>
+          </li>
+          <li class="programs__item">
+            <h3 class="programs__title">Набор массы</h3>
+            <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <img src="" width="" height="" alt="Логотип программы похудения pro">
+            <button class="programs__button" type="button">Каталог pro</button>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="advantages">
@@ -83,48 +87,58 @@
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <ul class="example__list">
             <li class="example__item">
-              <p class="advantages__text">5 кг</p>
+              <p class="advantages__text">
+                <strong>5 кг</strong>
+                <span>Снижение веса</span>
+              </p>
             </li>
             <li class="example__item">
-              <p class="advantages__text">60 дней</p>
+              <p class="advantages__text">
+                <strong>60 дней</strong>
+                <span>Затрачено времени</span>
+              </p>
             </li>
           </ul>
           <p>Затраты на питание: <span>15 000 РУБ.</span></p>
         </div>
         <div class="example__image-wrapper">
-          <img src="" alt="Толстый кот">
-          <img src="" alt="Стройный кот">
+          <img src="" width="" height="" alt="Толстый кот">
+          <img src="" width="" height="" alt="Стройный кот">
         </div>
       </div>
     </section>
     <section class="map">
       <div class="map__description container">
-        <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="map__title">Приглашаемк сотрудничеству дилеров!</h2>
         <address class="map__address">ул. Большая Конюшенная, д. 19/8
           <span>Санкт-Петербург</span>
         </address>
       </div>
       <div class="map__canvas"></div>
     </section>
-    </main>
-    <footer class="main-footer">
-      <div class="main-footer__description container">
-        <img src="" alt="Логотип компании">
-        <ul class="main-footer__social social-list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-        </ul>
-        <div class="main-footer__copyright">
-          <a>HTML Academy</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+  </main>
+  <footer class="footer">
+    <div class="footer__description container">
+      <a class="footer__logo logo" href="#">
+        <img class="logo__text-logo" src="" width="" height="" alt="Текстовый логотип сайта">
+      </a>
+      <ul class="footer__socials socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        </li>
+      </ul>
+      <a class="footer__copyright" href="#">
+        <span>HTML Academy</span>
+        <img src="" width="" height="" alt="">
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
