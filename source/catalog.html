@@ -42,6 +42,7 @@
           <li class="catalog__item product">
             <img class="product__image" src="" width="" height="" alt="">
             <h3 class="product__title">Cat Energy Pro 500 г</h3>
+            <!-- Использовать DL DT, вставить ссылку для картинки тайтла. ПРоверить кнопка или ссылка -->
             <p class="product__text">Масса</p>
             <p class="product__text">500 г</p>
             <p class="product__text">Вкус</p>
@@ -65,44 +66,46 @@
         <h2 class="extras__title">Дополнительные товары</h2>
         <ul class="extras__list">
           <li class="extras__item">
-            <h3 class="extras__title">Сахарозаменитель</h3>
-            <p class="extras__text">1 упаковка (100 г)</p>
-            <p class="extras__text">200 ₽</p>
-            <button type="product__button button button--primary">Заказать</button>
+            <!-- изменить заголовок h3 на p -->
+            <h3 class="extras__item-title">Сахарозаменитель</h3>
+            <p class="extras__item-text">1 упаковка (100 г)</p>
+            <p class="extras__item-text">200 ₽</p>
+            <button type="extras__item-button button button--primary">Заказать</button>
           </li>
           <li class="extras__item">
-            <h3 class="extras__title">Питьевая вода</h3>
-            <p class="extras__text">5 литров</p>
-            <p class="extras__text">50 ₽</p>
-            <button type="product__button button button--primary">Заказать</button>
+            <h3 class="extras__item-title">Питьевая вода</h3>
+            <p class="extras__item-text">5 литров</p>
+            <p class="extras__item-text">50 ₽</p>
+            <button type="extras__item-button button button--primary">Заказать</button>
           </li>
           <li class="extras__item">
-            <h3 class="extras__title">Молоко</h3>
-            <p class="extras__text">1 литр</p>
-            <p class="extras__text">100 ₽</p>
-            <button type="product__button button button--primary">Заказать</button>
+            <h3 class="extras__item-title">Молоко</h3>
+            <p class="extras__item-text">1 литр</p>
+            <p class="extras__item-text">100 ₽</p>
+            <button type="extras__item-button button button--primary">Заказать</button>
           </li>
           <li class="extras__item">
-            <h3 class="extras__title">Витамины</h3>
-            <p class="extras__text">1 упаковка (30 г)</p>
-            <p class="extras__text">300 ₽</p>
-            <button type="product__button button button--primary">Заказать</button>
+            <h3 class="extras__item-title">Витамины</h3>
+            <p class="extras__item-text">1 упаковка (30 г)</p>
+            <p class="extras__item-text">300 ₽</p>
+            <button type="extras__item-button button button--primary">Заказать</button>
           </li>
         </ul>
-        <div class="extras__aside">
-          <p class="extras__text extras__text--primary"></p>
+        <!-- Сократить? -->
+        <div class="extras__special-offer">
+          <p class="extras__-special-offer-text extras__special-offer-text--primary"></p>
         </div>
       </div>
     </section>
 
-    <section class="actions">
-      <div class="actions__wrapper container">
-        <h2 class="actions__title">Акции и новинки</h2>
-        <p class="actions__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-        <form class="actions__form subscribe" action="https://echo.htmlacademy.ru">
+    <section class="subscribe">
+      <div class="subscribe__wrapper container">
+        <h2 class="subscribe__title">Акции и новинки</h2>
+        <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="subscribe__form form" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
-          <input class="subscribe__input" type="email" id="subscribe-email" name="subscribe-email" placeholder="кuklachev@gmail.com" required>
-          <button class="subscribe__btn button button--primary" type="submit">Подписаться</button>
+          <input class="form__input" type="email" id="subscribe-email" name="subscribe-email" placeholder="кuklachev@gmail.com" required>
+          <button class="form__btn button button--primary" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
