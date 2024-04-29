@@ -12,36 +12,50 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper container">
-      <a class="header__logo logo" href="#">
-        <picture class="logo__image">
-          <img src="" width="" height="" alt="Логотип сайта">
+      <a class="header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-image-tablet.svg">
+          <img class="header__logo-image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип сайта">
         </picture>
-        <img class="logo__text-logo" src="" width="" height="" alt="Текстовый логотип сайта">
+        <img class="header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Текстовый логотип сайта">
       </a>
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="">Главная</a>
+            <p class="nav__link nav__link--current">Главная</p>
           </li>
-          <li class="nav__item nav__item--current">
-            <p class="nav__link">Каталог продукции</p>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог продукции</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
+      <button class="header__mobile-menu" type="button">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
     </div>
   </header>
   <main class="main-container">
 
     <section class="catalog">
       <div class="catalog__wrapper container">
-        <h1 class="catalog__title">Каталог продукции</h1>
+        <h1 class="catalog__title title-primary">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item product">
-            <img class="product__image" src="" width="" height="" alt="">
-            <h3 class="product__title">Cat Energy Pro 500 г</h3>
+            <a class="product__image-wrapper" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" width="169" height="210" type="image/png" srcset="images/catalog/catalog-1-desktop@1x.png 1x, images/catalog/catalog-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="200" height="210" type="image/png" srcset="images/catalog/catalog-1-tablet@1x.png 1x, images/catalog/catalog-1-tablet@2x.png 2x">
+                <img class="product__image" src="images/catalog/catalog-1-mobile@1x.png" srcset="images/catalog/catalog-1-mobile@2x.png 2x" width="140" height="107" alt="Изображение продукта Cat Energy">
+              </picture>
+              <span class="visually-hidden">Изображение Cat Energy Pro 500 г</span>
+            </a>
+            <a class="product__title-wrapper" href="#">
+              <h3 class="product__title">Cat Energy Pro 500 г</h3>
+            </a>
             <!-- Использовать DL DT, вставить ссылку для картинки тайтла. ПРоверить кнопка или ссылка -->
             <p class="product__text">Масса</p>
             <p class="product__text">500 г</p>
@@ -49,13 +63,13 @@
             <p class="product__text">Курица</p>
             <p class="product__text">Цена</p>
             <p class="product__text">700 Р</p>
-            <button type="product__button button button--primary">Заказать</button>
+            <a class="product__button button button--primary" href="#">Заказать</a>
           </li>
           <li class="catalog__item product product--show-all">
-            <img class="product__image product__image--show-all" src="" width="" height="" alt="">
+            <!-- <img class="product__image product__image--show-all" src="" width="" height="" alt=""> -->
             <h3 class="product__title">Показать еще 100500 товаров</h3>
             <p class="product__text product__text--show-all">На самом деле вкусов гораздо больше!</p>
-            <button type="product__button button button--secondary">Показать все</button>
+            <a class="product__button button button--secondary" href="#">Показать все</a>
           </li>
         </ul>
       </div>
@@ -121,24 +135,29 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__description container">
-      <a class="footer__logo logo" href="#">
-        <img class="logo__text-logo" src="" width="" height="" alt="Текстовый логотип сайта">
+    <div class="footer__wrapper container">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-image" src="images/logo-text.svg" width="128" height="124" alt="Текстовый логотип сайта">
       </a>
       <ul class="footer__socials socials">
         <li class="socials__item">
-          <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Мы в Ютубе</span>
+          </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
         </li>
       </ul>
       <a class="footer__copyright" href="#">
-        <span>HTML Academy</span>
-        <img src="" width="" height="" alt="">
+        <span class="footer__copyright-text">HTML Academy</span>
       </a>
     </div>
   </footer>
