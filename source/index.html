@@ -16,7 +16,7 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper container">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image.svg">
           <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-image-tablet.svg">
@@ -27,10 +27,10 @@
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <p class="nav__link nav__link--current">Главная</p>
+            <a class="nav__link nav__link--current" href="#">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Каталог продукции</a>
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Подбор программы</a>
@@ -42,7 +42,7 @@
       </button>
     </div>
   </header>
-  <main class="main-container">
+  <main>
     <section class="hero">
       <div class="hero__wrapper">
         <h1 class="hero__title title-primary">Функциональное питание для котов</h1>
@@ -76,7 +76,7 @@
     </section>
     <section class="advantages">
       <div class="advantages__wrapper container">
-        <h2 class="advantages__title title-secondary">Как это работает</h2>
+        <h2 class="advantages__title title-primary">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <p class="advantages__item-description">Функциональное питание содержит только полезные питательные вещества.</p>
@@ -96,7 +96,7 @@
     <section class="example">
       <div class="example__wrapper container">
         <div class="example__text-wrapper">
-          <h2 class="example__title">Живой пример</h2>
+          <h2 class="example__title title-primary">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <ul class="example__list">
             <li class="example__item">
@@ -128,7 +128,7 @@
     <section class="contacts">
       <div class="contacts__description container">
         <div class="contacts__content">
-          <h2 class="contacts__title">Приглашаемк сотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
             <span>Санкт-Петербург</span>
           </address>
@@ -137,7 +137,7 @@
       <picture>
         <source media="(min-width: 1200px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="works-item__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Изображение карты">
+        <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Изображение карты">
       </picture>
       <div class="contacts__map"></div>
     </section>
