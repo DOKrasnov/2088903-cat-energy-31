@@ -1,5 +1,21 @@
 .example {
+  position: relative;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 462px;
+    background-color: $bg-grey-color;
+    z-index: -1;
+  }
 }
 
 .example__text-wrapper {
@@ -24,7 +40,7 @@
   position: relative;
   flex: 0 0 124px;
   height: 56px;
-  border: $input-border;
+  border: $primary-border;
   border-radius: 3px;
 }
 
