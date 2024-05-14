@@ -26,13 +26,13 @@
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
   counter-increment: advantages 1;
 
   @media (min-width: $tablet) {
     flex-direction: column;
+    justify-content: center;
     gap: 31px;
     width: 250px;
     min-height: 280px;

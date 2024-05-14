@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => menuBtn.addEventListener('cl
 
 
 // Slider
-const slider = document.getElementById('slider');
+/* const slider = document.getElementById('slider');
 const slideContainer = document.getElementById('img1');
 
 const onInputChange = () => {
@@ -21,4 +21,4 @@ const onInputChange = () => {
   slider.style.setProperty('--pseudo-content', `${slider.value - 1}%`);
 };
 
-document.addEventListener('DOMContentLoaded', () => slider.addEventListener('change', onInputChange));
+document.addEventListener('DOMContentLoaded', () => slider.addEventListener('change', onInputChange)); */

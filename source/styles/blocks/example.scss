@@ -158,19 +158,18 @@
 }
 
 .example__slider-image {
-  width: 280px;
   max-width: none;
   background-color: #eaeaea;
 }
 
 
 .example__slider-button {
-  position: absolute;
+  /* position: absolute;
   width: 100%;
   bottom: 10px;
   z-index: 1;
 
-  &::before {
+   &::before {
     content: "";
     position: absolute;
     left: var(--pseudo-content, 49%);
@@ -180,7 +179,7 @@
     background-color: $icon-color;
     border-radius: 2px;
     cursor: pointer;
-  }
+  } */
 }
 
 .img {
@@ -190,10 +189,27 @@
   max-width: 280px;
   height: 100%;
   overflow: hidden;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    max-width: 560px;
+  }
 }
 
 #img1 {
-  width: 50%;
+  width: 51%;
   z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 4px;
+    background-color: $icon-color;
+    border-radius: 2px;
+    cursor: pointer;
+  }
 }
 
