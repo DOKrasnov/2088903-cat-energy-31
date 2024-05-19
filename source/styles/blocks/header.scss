@@ -69,6 +69,10 @@
     max-width: calc(100% - 200px);
     background-color: transparent;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 600px;
+  }
 }
 
 .header__mobile-menu {
