@@ -1,1 +1,1 @@
-var e=document.getElementById("mobile-menu"),n=()=>{e.classList.contains("header__mobile-menu--opened")?e.classList.remove("header__mobile-menu--opened"):e.classList.add("header__mobile-menu--opened")};document.addEventListener("DOMContentLoaded",()=>e.addEventListener("click",n));
+var n=document.querySelector(".header__nav"),e=document.querySelector(".header__mobile-menu");n.classList.remove("header__nav--nojs");var o=()=>e.classList.toggle("header__mobile-menu--opened");e.addEventListener("click",o);
